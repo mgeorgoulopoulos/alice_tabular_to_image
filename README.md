@@ -6,9 +6,16 @@ There is a growing trend in machine learning to convert tabular data into images
 I was curious to see if I could use metaballs to encode tabular data points into images. Turns out it can be done and decent models can be obtained with minimal effort.
 
 ### The Idea
-* **Arrangement**: Features are positioned in 2D space using MDS. Features that are highly correlated sit closer together.
+**Arrangement**: Features are positioned in 2D space using MDS. Features that are highly correlated sit closer together.
 
-* **Representation**: Instead of a single pixel, each feature is a "metaball" with a **Cosine Attenuation** curve (a smooth glow with a defined radius of influence).
+![Layout of features in 2D](img/mds.png)
+
+**Representation**: Instead of a single pixel, each feature is a "metaball" with a **Cosine Attenuation** curve (a smooth glow with a defined radius of influence).
+
+| -------------- | -------------- | -------------- | 
+| ![](img/1.png) | ![](img/2.png) | ![](img/3.png) |
+| -------------- | -------------- | -------------- |
+
 
 * **Interaction**: Overlapping glows create distinct shapes allowing the CNN to see how features interact.
 * **Color**: Used the **Turbo palette** to take full advantage of the RGB color space.
