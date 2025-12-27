@@ -18,9 +18,11 @@ I was curious to see if I could use metaballs to encode tabular data points into
 
 
 * **Interaction**: Overlapping glows create distinct shapes allowing the CNN to see how features interact.
-* **Color**: Used the **Turbo palette** to take full advantage of the RGB color space.
+**Color**: Used the **Turbo palette** to take full advantage of the RGB color space.
 
-### Results
+Open the [Jupyter notebook](https://github.com/mgeorgoulopoulos/alice_tabular_to_image/blob/main/alice.ipynb) for a detailed view of the steps I took.
+
+## Results
 I tested this on the UCI Superconductor dataset to predict the target variable (superconductor critical temperature). 
 
 * **Baseline**: The [original 2018 paper](https://www.sciencedirect.com/science/article/abs/pii/S0927025618304877?via%3Dihub) used XGBoost and reached ~9.5 RMSE.
