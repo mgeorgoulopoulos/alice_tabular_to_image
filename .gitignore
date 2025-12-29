@@ -3,3 +3,4 @@
 jupyter UP.bat
 superconductivty+data.zip
 superconductor_resnet.keras
+superconductor_resnet_v2.keras

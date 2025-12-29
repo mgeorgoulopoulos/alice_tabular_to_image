@@ -12,9 +12,9 @@ I was curious to see if I could use metaballs to encode tabular data points into
 
 **Representation**: Instead of a single pixel, each feature is a "metaball" with a **Cosine Attenuation** curve (a smooth glow with a defined radius of influence).
 
-| -------------- | -------------- | -------------- | 
+| | | | 
+|----------------|----------------|----------------| 
 | ![](img/1.png) | ![](img/2.png) | ![](img/3.png) |
-| -------------- | -------------- | -------------- |
 
 
 * **Interaction**: Overlapping glows create distinct shapes allowing the CNN to see how features interact.
@@ -40,3 +40,17 @@ This was a first-pass to see if the concept held water. Since it worked out-of-t
 ## Verdict
 
 The fact that a model pre-trained on photographs of cats and dogs can be "tricked" into predicting superconductivity via metaball topography is fascinating. ALICE shows that we don't always need to feed models raw numbers—sometimes, showing them a picture of the data's "texture" is enough to reveal the underlying physics.
+
+# Updates
+
+## v2 - Dec 29 2925
+
+As expected, adding PCA components beyond the first one improved the situation:
+
+* Better **MAE of 6.85**
+* **No overfitting**: the model generalizes nicely to the unseen test set.
+* Denser, more visually appealing images.
+
+| | | | 
+|------------------|------------------|------------------| 
+| ![](img/2_1.png) | ![](img/2_2.png) | ![](img/2_3.png) |
