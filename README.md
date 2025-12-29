@@ -12,7 +12,7 @@ I was curious to see if I could use metaballs to encode tabular data points into
 
 **Representation**: Instead of a single pixel, each feature is a "metaball" with a **Cosine Attenuation** curve (a smooth glow with a defined radius of influence).
 
-| | | | 
+| | | |
 |----------------|----------------|----------------| 
 | ![](img/1.png) | ![](img/2.png) | ![](img/3.png) |
 
@@ -43,7 +43,7 @@ The fact that a model pre-trained on photographs of cats and dogs can be "tricke
 
 # Updates
 
-## v2 - Dec 29 2925
+## v2 - Dec 29 2025
 
 As expected, adding PCA components beyond the first one improved the situation:
 
@@ -51,6 +51,6 @@ As expected, adding PCA components beyond the first one improved the situation:
 * **No overfitting**: the model generalizes nicely to the unseen test set.
 * Denser, more visually appealing images.
 
-| | | | 
+| | | |
 |------------------|------------------|------------------| 
 | ![](img/2_1.png) | ![](img/2_2.png) | ![](img/2_3.png) |
