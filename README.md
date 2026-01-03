@@ -54,3 +54,15 @@ As expected, adding PCA components beyond the first one improved the situation:
 | | | |
 |------------------|------------------|------------------| 
 | ![](img/2_1.png) | ![](img/2_2.png) | ![](img/2_3.png) |
+
+## v3 - Jan 3 2026
+
+Changed a few things which slightly dropped the test MAE to **6.68**.
+
+* Removed the second scaling, preserving PCA feature relative magnitude.
+* Extended the radius of influence.
+* Allowed for both constructive and destructive interference between features.
+* Played around with the model a bit: "elu" instead of "relu" for the final "dense" regression layer and Max instead of Average pooling.
+
+
+![](img/3_galerry.png)
